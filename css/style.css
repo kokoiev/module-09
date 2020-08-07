@@ -131,7 +131,21 @@ img {
   background-size: cover;
   text-align: center;
   background-color: black;
-  padding-top: 65px;
+  padding-top: 39px;
+}
+@media (max-width: 767px) {
+  .nav-column {
+    margin-bottom: 118px;
+  }
+  .wrapper-nav {
+    margin-bottom: 35px;
+  }
+  .header {
+    padding-top: 20px;
+  }
+  .nav-list {
+    padding-right: 22px;
+  }
 }
 .signup {
   border: 2px solid white;
@@ -142,23 +156,79 @@ img {
   justify-content: center;
 }
 .nav-list:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 120px;
 }
 .logotype {
   display: block;
   width: max-content;
   margin: 0 auto;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: #ffffff;
   font-weight: 700;
   font-family: "Montserrat";
   text-align: center;
   text-transform: uppercase;
 }
-.nav-column {
-  margin-bottom: 100px;
-}
+
 .header-wrapper {
   text-align: center;
+}
+.header-title {
+  font-size: 29px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.header-description {
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+.find-btn {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  margin-bottom: 140px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(../image/bg-tabl.png);
+  }
+  .header-title {
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    margin-bottom: 28px;
+  }
+  .header-description {
+    font-size: 24px;
+    letter-spacing: normal;
+    margin-bottom: 35px;
+  }
+  .wrapper-nav {
+    margin-bottom: 141px;
+  }
+  .find-btn {
+    width: 220px;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    background-image: url(../image/bg-desktop.png);
+  }
 }
