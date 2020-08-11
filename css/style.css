@@ -146,6 +146,9 @@ img {
   .nav-list {
     padding-right: 22px;
   }
+  .partner-row {
+    margin-bottom: 20px;
+  }
 }
 .signup {
   border: 2px solid white;
@@ -208,6 +211,7 @@ img {
 @media (min-width: 768px) {
   .header {
     background-image: url(../image/bg-tabl.png);
+    height: 700px;
   }
   .header-title {
     font-size: 52px;
@@ -231,4 +235,118 @@ img {
   .header {
     background-image: url(../image/bg-desktop.png);
   }
+}
+.title-partner {
+  font-size: 23px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.main {
+  padding-top: 104px;
+  padding-bottom: 50px;
+}
+.partner-img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.partner-list {
+  text-align: center;
+}
+.img-wrapper::after {
+  display: block;
+  content: "";
+  background-image: url(../image/tv01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ff4e50;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+.img-flask::after {
+  background-image: url(../image/flask02.png);
+  background-color: #ffa507;
+}
+.img-cup::after {
+  background-image: url(../image/cup03.png);
+  background-color: #1cd7ad;
+}
+.img-fly::after {
+  background-image: url(../image/fly04.png);
+  background-color: #4e73db;
+}
+.img-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .img-wrapper {
+    margin-bottom: 20px;
+  }
+}
+.list-name {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  margin-bottom: 15px;
+}
+.list-description {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  width: 220px;
+  display: block;
+  margin: 0 auto;
+}
+.partner-btn {
+  font-size: 14px;
+  color: #ff4e50;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .partner-list-item {
+    margin-bottom: 28px;
+  }
+}
+@media (min-width: 768px) {
+  .title-partner {
+    margin-bottom: 35px;
+  }
+  .img-wrapper {
+    margin-bottom: 20px;
+  }
+  .partner-list-item:nth-child(-n + 2) {
+    margin-bottom: 50px;
+  }
+  .partner-list {
+    margin-bottom: 39px;
+  }
+  .main {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 960px) {
 }
